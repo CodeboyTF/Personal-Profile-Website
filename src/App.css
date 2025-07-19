@@ -1,0 +1,242 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #023337;
+  backdrop-filter: blur(12px);
+  border: 1px solid #023337;
+  border-radius: 25px;
+  /* box-shadow: 0 4px 12px #adacb5; */
+  padding: 6px 12px;
+  width: fit-content;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  align-items: center;
+  color: #fff;
+}
+
+.nav-links li {
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-links li:hover {
+  background-color: #e9f8e7;
+  color: #023337;
+  text-decoration: underline dotted;
+}
+
+.nav-links button {
+  font-size: 12px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e9f8e7;
+  color: #023337;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-links button:hover {
+  background-color: #356267;
+  color: #adacb5;
+}
+
+.content {
+  margin-top: 70px;
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .navbar {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .nav-links li {
+    font-size: 16px;
+  }
+
+  .nav-links button {
+    font-size: 14px;
+  }
+}
+
+/* toggle sun/moon button */
+
+.theme-toggle-icon {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+  padding: 0.1rem;
+  transition: transform 0.2s ease;
+}
+
+.theme-toggle-icon:hover {
+  transform: scale(1);
+}
+
+/* -------- ABOUT ME CARD ----------- */
+.about-card {
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  width: 300px;
+  height: calc(90vh - 70px);
+  background: #023337;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px 16px;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2d3142;
+  border-left: 4px solid #356267;
+}
+
+/* profile image */
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e9f8e7;
+  margin-bottom: 18px;
+}
+
+/* text and titles */
+.about-info {
+  text-align: center;
+  flex: 1;
+}
+
+.role-text {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #e9f8e7;
+}
+
+.about-text {
+  color: #e9f8e7;
+  margin-bottom: 18px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.about-text span {
+  display: inline-block;
+  border-right: 2px solid #356267;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(20, end) infinite,
+    blinkCursor 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 18ch; /* adjust to match the text length */
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blinkCursor {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #356267;
+  }
+}
+
+/* contact section icons */
+.lottie-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px auto;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background-color: #356267;
+  width: 100%;
+  max-width: 260px;
+}
+
+.lottie-icon span {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #e9f8e7;
+  word-break: break-word;
+  transition: color 0.3s ease;
+}
+
+.lottie-icon:hover span {
+  color: #023337;
+}
+
+/* social links */
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-link {
+  margin: 0 7px;
+  font-size: 1.3rem;
+  color: #356267;
+  transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #e9f8e7;
+}
