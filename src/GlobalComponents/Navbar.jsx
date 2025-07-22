@@ -12,9 +12,9 @@ export default function NavbarMenu() {
   useEffect(() => {
     if (theme === "#023337") {
       document.body.style.backgroundColor = "#023337";
-      document.body.style.color = "#41737C";
+      document.body.style.color = "white";
     } else {
-      document.body.style.backgroundColor = "#41737C";
+      document.body.style.backgroundColor = "white";
       document.body.style.color = "#023337";
     }
   }, [theme]);
@@ -51,7 +51,7 @@ export default function NavbarMenu() {
           <li>
             <button
               onClick={() =>
-                setTheme(theme === "#023337" ? "#41737C" : "#023337")
+                setTheme(theme === "#023337" ? "white" : "#023337")
               }
               className="theme-toggle-icon"
               title="Toggle theme"
