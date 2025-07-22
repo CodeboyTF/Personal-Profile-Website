@@ -2,17 +2,13 @@ import { useState, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
 import "../App.css";
 import About from "./About.jsx";
-// import Educaton from "../Pages/Education_Page/education.jsx";
 
 export default function NavbarMenu() {
   const [activePage, setActivePage] = useState("About");
-
-  // ✅ Load theme from localStorage or default to "#e9f8e7"
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("theme") || "#e9f8e7";
   });
 
-  // ✅ Update theme styling and store in localStorage
   useEffect(() => {
     if (theme === "#023337") {
       document.body.style.backgroundColor = "#023337";
