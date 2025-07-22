@@ -32,7 +32,7 @@ function About() {
               loop={true}
               style={{ width: 30, height: 30 }}
             />
-            <span>FhatuMakhara@gmail.com</span>
+            <a href="mailto:fhatumakhara@gmail.com"><span> FhatuMakhara@gmail.com</span></a>
           </div>
 
           {/* Phone */}
@@ -42,7 +42,7 @@ function About() {
               loop={true}
               style={{ width: 30, height: 30 }}
             />
-            <span>+27 68 552 8943</span>
+            <a href="tel:+27 68 552 8943"><span>+27 68 552 8943</span></a>
           </div>
 
           {/* Birthdate (Calendar) */}
