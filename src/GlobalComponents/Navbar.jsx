@@ -7,8 +7,12 @@ import About from "./About.jsx";
 export default function NavbarMenu() {
   const [activePage, setActivePage] = useState("About");
 
-  const [theme, setTheme] = useState("#e9f8e7");
+  // ✅ Load theme from localStorage or default to "#e9f8e7"
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "#e9f8e7";
+  });
 
+  // ✅ Update theme styling and store in localStorage
   useEffect(() => {
     if (theme === "#023337") {
       document.body.style.backgroundColor = "#023337";
@@ -17,6 +21,8 @@ export default function NavbarMenu() {
       document.body.style.backgroundColor = "white";
       document.body.style.color = "#023337";
     }
+
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   const renderContent = () => {
