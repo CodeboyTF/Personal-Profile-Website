@@ -240,3 +240,37 @@ html {
 .icon-link:hover {
   color: #e9f8e7;
 }
+
+
+/* about me card */
+
+.page-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Right-side content */
+.about-content-card {
+  margin-left: 340px; /* enough space for the fixed .about-card + gap */
+  margin-top: 100px;
+  background-color: #023337;
+  border-radius: 12px;
+  max-width: 600px;
+  padding: 20px 24px;
+  color: #e9f8e7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+.card-header {
+  background-color: #356267;
+  padding: 16px 20px;
+  border-radius: 8px 8px 0 0;
+  font-size: 1.6rem;
+  margin: -20px -24px 20px -24px; /* align header with edges */
+}
+
+.card-content {
+  font-size: 1rem;
+  line-height: 1.6;
+}

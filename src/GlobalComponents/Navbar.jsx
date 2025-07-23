@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
 import "../App.css";
 import About from "./About.jsx";
+import Profile from "../Pages/About_Page/Profile.jsx";
 
 export default function NavbarMenu() {
   const [activePage, setActivePage] = useState("About");
@@ -24,7 +25,10 @@ export default function NavbarMenu() {
   const renderContent = () => {
     switch (activePage) {
       case "About":
-        return <About />;
+        return (<>
+        <About />
+        <Profile />
+        </>);
       case "Education":
         return <About />;
       case "Experience":
