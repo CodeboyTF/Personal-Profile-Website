@@ -115,13 +115,13 @@ html {
   transform: scale(1);
 }
 
-/* -------- ABOUT ME CARD ----------- */
+/* -------- ABOUT ME CARD ~ with personal details ----------- */
 .about-card {
   position: fixed;
-  top: 100px;
-  left: 50px;
-  width: 300px;
-  height: calc(90vh - 70px);
+  top: 160px;
+  left: 200px;
+  width: 290px;
+  height: calc(80vh - 160px);
   background: #023337;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
@@ -242,28 +242,30 @@ html {
 }
 
 
-/* about me card */
+/* about me card ~ the big one with text ABOUT ME*/
 
 .page-layout {
-  display: flex;
+  display: 900px;
   min-height: 100vh;
 }
 
 /* Right-side content */
 .about-content-card {
-  margin-left: 340px; /* enough space for the fixed .about-card + gap */
-  margin-top: 100px;
-  background-color: #023337;
+  flex-grow: 1;
+  margin-top: 65px;
+  margin-left: 520px;
+  background-color: #356267;
   border-radius: 12px;
-  max-width: 600px;
   padding: 20px 24px;
   color: #e9f8e7;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
+  min-width: 1000px;     /* optional minimum */
+  max-width: none;
 }
 
 .card-header {
-  background-color: #356267;
+  background-color: #023337;
   padding: 16px 20px;
   border-radius: 8px 8px 0 0;
   font-size: 1.6rem;
