@@ -1,7 +1,7 @@
 function DownloadCv() {
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "Fhatuwani CV.pdf"; // Replace with your actual CV file path
+    link.href = "Fhatuwani CV.pdf";
     link.download = "Fhatuwani_Makharamedzha_CV.pdf";
     document.body.appendChild(link);
     link.click();
