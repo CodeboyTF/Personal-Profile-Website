@@ -1,3 +1,5 @@
+import { FaDownload } from "react-icons/fa";
+
 function DownloadCv() {
   const downloadCV = () => {
     const link = document.createElement("a");
@@ -9,9 +11,10 @@ function DownloadCv() {
   };
 
   return (
-    <>
-      <button onClick={downloadCV}>Download CV</button>
-    </>
+    <button onClick={downloadCV}>
+      <FaDownload style={{ marginRight: "8px" }} />
+      Download CV
+    </button>
   );
 }
 
