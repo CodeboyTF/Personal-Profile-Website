@@ -1,3 +1,5 @@
+import DownloadCv from "./Download_Button";
+
 function Profile() {
     return (
         <>
@@ -7,6 +9,9 @@ function Profile() {
     </div>
     <div className="card-content">
       I am Tebogo Makharamedzha, a software developer passionate about building modern and efficient web applications...
+      <div className="button-downloadcv">
+        <DownloadCv />
+      </div>
     </div>
   </div>
 
