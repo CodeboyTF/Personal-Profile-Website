@@ -2,6 +2,8 @@ import Contribution from "./Contribution_Button";
 import DownloadCv from "./Download_Button";
 import SkillImage from "./SkillImage";
 import Stat_bar from "./Stats_Bar";
+import WhatIDo from "./Description"; // or correct relative path to your WhatIDo.jsx
+
 
 // import Contribution from "Pages/About_Page/Contribution_Button.jsx";
 
@@ -23,6 +25,7 @@ function Profile() {
               <Contribution />
             </div>
           </div>
+          {/* <WhatIDo /> */}
           <SkillImage />
           <div className="Stats">
             <Stat_bar />
