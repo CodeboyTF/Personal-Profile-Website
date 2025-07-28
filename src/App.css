@@ -388,3 +388,42 @@ html {
   bottom: 4px;
   right: 4px;
 }
+
+
+/* Skills image card About page */
+
+.tech-icons-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* space between the circles */
+  justify-content: center;
+  align-items: center;
+  margin: 40px 24px 30px 24px;
+  padding: 10px 0;
+}
+
+.tech-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #284e52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+  filter: grayscale(100%);
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.tech-icon img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}

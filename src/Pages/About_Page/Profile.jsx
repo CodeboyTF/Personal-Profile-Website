@@ -1,5 +1,6 @@
 import Contribution from "./Contribution_Button";
 import DownloadCv from "./Download_Button";
+import SkillImage from "./SkillImage";
 import Stat_bar from "./Stats_Bar";
 
 // import Contribution from "Pages/About_Page/Contribution_Button.jsx";
@@ -22,6 +23,7 @@ function Profile() {
               <Contribution />
             </div>
           </div>
+          <SkillImage />
           <div className="Stats">
             <Stat_bar />
           </div>
