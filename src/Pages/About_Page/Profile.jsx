@@ -12,8 +12,8 @@ function Profile() {
           <h1>About Me</h1>
         </div>
         <div className="card-content">
-          I am Tebogo Makharamedzha, a software developer passionate about building modern and efficient web applications...
-
+          I am Tebogo Makharamedzha, a software developer passionate about
+          building modern and efficient web applications...
           <div className="button-stack">
             <div className="button-downloadcv">
               <DownloadCv />
@@ -22,8 +22,7 @@ function Profile() {
               <Contribution />
             </div>
           </div>
-
-                    <div className="Stats">
+          <div className="Stats">
             <Stat_bar />
           </div>
         </div>
@@ -33,4 +32,3 @@ function Profile() {
 }
 
 export default Profile;
-
