@@ -25,13 +25,15 @@ function Profile() {
               <Contribution />
             </div>
           </div>
-          {/* <WhatIDo /> */}
+          
           <SkillImage />
           <div className="Stats">
             <Stat_bar />
           </div>
         </div>
       </div>
+
+      <WhatIDo />
     </>
   );
 }
