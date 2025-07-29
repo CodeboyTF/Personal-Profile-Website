@@ -17,6 +17,11 @@ function WhatIDo() {
       title: "Integrated Services",
       desc: "I integrate third-party systems and APIs to ensure seamless communication between your tools, application and platforms.",
     },
+    {
+      icon: <FaPuzzlePiece />,
+      title: "Integrated Services",
+      desc: "I integrate third-party systems and APIs to ensure seamless communication between your tools, application and platforms.",
+    },
   ];
 
   return (

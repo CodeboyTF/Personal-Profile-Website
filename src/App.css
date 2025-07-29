@@ -250,7 +250,7 @@ html {
 
 /* Right-side content */
 .about-content-card {
-  flex-grow: 1;
+  flex-grow: 0;
   margin-top: 22px;
   margin-left: 330px;
   background-color: #356267;
@@ -259,9 +259,13 @@ html {
   color: #e9f8e7;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
-  min-width: 100px; /* optional minimum */
-  max-width: none;
+
+  width: 890px;       /* ✅ Fixed width */
+  height: 550px;      /* ✅ Fixed height */
+  overflow: hidden;   /* ✅ Clip overflow content */
+  position: relative; /* Optional, allows absolute children if needed */
 }
+
 
 .card-header {
   background-color: #023337;
