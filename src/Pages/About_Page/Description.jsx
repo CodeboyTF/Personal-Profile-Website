@@ -1,4 +1,4 @@
-import { FaLaptopCode, FaChartLine, FaPuzzlePiece, FaUserTie } from "react-icons/fa";
+import { FaLaptopCode, FaChartLine, FaPuzzlePiece, FaCog } from "react-icons/fa";
 
 function WhatIDo() {
   const services = [
@@ -18,10 +18,10 @@ function WhatIDo() {
       desc: "I integrate third-party systems and APIs to ensure seamless communication between your tools, application and platforms.",
     },
     {
-      icon: <FaPuzzlePiece />,
-      title: "Integrated Services",
-      desc: "I integrate third-party systems and APIs to ensure seamless communication between your tools, application and platforms.",
-    },
+  icon: <FaCog />,
+  title: "Settings",
+  desc: "Configure your preferences and application options here.",
+}
   ];
 
   return (
