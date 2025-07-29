@@ -25,10 +25,12 @@ export default function NavbarMenu() {
   const renderContent = () => {
     switch (activePage) {
       case "About":
-        return (<>
-        <About />
-        <Profile />
-        </>);
+        return (
+          <>
+            <About />
+            <Profile />
+          </>
+        );
       case "Education":
         return <About />;
       case "Experience":
