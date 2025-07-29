@@ -9,7 +9,7 @@ function WhatIDo() {
     },
     {
       icon: <FaChartLine />,
-      title: "Data Analysis / Cyber Analysis",
+      title: "Data Analysis",
       desc: "I build, create, and maintain websites. Tailored to meet your business goals and attract your ideal audience.",
     },
     {
