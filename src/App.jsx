@@ -17,8 +17,9 @@ export default function App() {
         <Loading />
       ) : (
         <>
+        <UrlIcon />
           <NavbarMenu />
-          <UrlIcon />
+          
         </>
       )}
     </>
