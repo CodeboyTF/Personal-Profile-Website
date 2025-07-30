@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
 import "../App.css";
+
 import About from "./About.jsx";
 import Profile from "../Pages/About_Page/Profile.jsx";
+import Educaton from "../Pages/Education_Page/Education.jsx";
+import Certificates from "../Pages/certificates/Certificates.jsx";
 
 export default function NavbarMenu() {
   const [activePage, setActivePage] = useState("About");
@@ -28,17 +31,25 @@ export default function NavbarMenu() {
         return (
           <>
             <About />
-            <Profile />
+            <Profile setActivePage={setActivePage} />
           </>
         );
       case "Education":
-        return <About />;
+        return (
+          <>
+            <About />
+            <Educaton />
+          </>
+        );
       case "Experience":
         return <About />;
       case "Projects":
         return <About />;
       case "Certificates":
-        return <About />;
+        return (<>
+        <About />
+        {/* <Certificates/> */}
+        </>);
       case "Gallery":
         return <About />;
       default:
