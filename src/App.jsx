@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import NavbarMenu from "./GlobalComponents/navbar";
 import UrlIcon from "./GlobalComponents/UrlIcon";
+import Loading from "./GlobalComponents/Loading.jsx";
 
-function App() {
+export default function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 10000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-      <NavbarMenu />
-      <UrlIcon />
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <>
+          <NavbarMenu />
+          <UrlIcon />
+        </>
+      )}
     </>
   );
 }
-
-export default App;
