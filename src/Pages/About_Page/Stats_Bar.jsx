@@ -3,12 +3,12 @@ import { GiDiploma } from "react-icons/gi";
 import { MdWork } from "react-icons/md";
 import { FaLink } from "react-icons/fa";
 
-function Stat_bar() {
+function Stat_bar({ setActivePage }) {
   return (
     <div className="stats-container-card">
       <div
         className="stats-bar-item"
-        onClick={() => (window.location.href = "./education.jsx")}
+        onClick={() => setActivePage("Education")}
       >
         <div className="stats-row">
           <FaProjectDiagram className="stats-icon" />
@@ -21,7 +21,7 @@ function Stat_bar() {
 
       <div
         className="stats-bar-item"
-        onClick={() => (window.location.href = "./certificates.jsx")}
+        onClick={() => setActivePage("Certificates")}
       >
         <div className="stats-row">
           <GiDiploma className="stats-icon" />
@@ -34,7 +34,7 @@ function Stat_bar() {
 
       <div
         className="stats-bar-item"
-        onClick={() => (window.location.href = "./experience.jsx")}
+        onClick={() => setActivePage("Experience")}
       >
         <div className="stats-row">
           <MdWork className="stats-icon" />

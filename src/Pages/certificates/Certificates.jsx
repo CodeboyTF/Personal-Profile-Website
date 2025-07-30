@@ -1,7 +1,7 @@
 // import NavbarMenu from "../../GlobalComponents/navbar";
 import About from "../../GlobalComponents/About";
 
-function Educaton() {
+function Certificates() {
   const handleDownload = () => {
     alert("your file is downloaded");
     // Here you could also trigger the actual download if you want
@@ -11,10 +11,10 @@ function Educaton() {
     <>
     
       <button onClick={handleDownload}>
-        download here
+        fokkkkkkkkkkkkkkkkkkk
       </button>
     </>
   );
 }
 
-export default Educaton;
+export default Certificates;

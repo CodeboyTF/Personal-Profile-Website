@@ -2,12 +2,9 @@ import Contribution from "./Contribution_Button";
 import DownloadCv from "./Download_Button";
 import SkillImage from "./SkillImage";
 import Stat_bar from "./Stats_Bar";
-import WhatIDo from "./Description"; // or correct relative path to your WhatIDo.jsx
+import WhatIDo from "./Description";
 
-
-// import Contribution from "Pages/About_Page/Contribution_Button.jsx";
-
-function Profile() {
+function Profile({ setActivePage }) {
   return (
     <>
       <div className="about-content-card">
@@ -28,7 +25,8 @@ function Profile() {
           
           <SkillImage />
           <div className="Stats">
-            <Stat_bar />
+            {/* Pass setActivePage prop down to Stat_bar */}
+            <Stat_bar setActivePage={setActivePage} />
           </div>
         </div>
       </div>
