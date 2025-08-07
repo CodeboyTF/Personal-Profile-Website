@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import NavbarMenu from "./GlobalComponents/navbar";
+import NavbarMenu from "./GlobalComponents/Navbar.jsx";
 import UrlIcon from "./GlobalComponents/UrlIcon";
 import Loading from "./GlobalComponents/Loading.jsx";
 
