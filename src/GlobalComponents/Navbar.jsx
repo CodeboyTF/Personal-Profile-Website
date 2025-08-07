@@ -6,6 +6,7 @@ import About from "./About.jsx";
 import Profile from "../Pages/About_Page/Profile.jsx";
 import Educaton from "../Pages/Education_Page/Education.jsx";
 import Certificates from "../Pages/certificates/Certificates.jsx";
+import Gallery from "../Pages/Gallery_Page/Gallery.jsx";
 
 export default function NavbarMenu() {
   const [activePage, setActivePage] = useState("About");
@@ -16,9 +17,9 @@ export default function NavbarMenu() {
   useEffect(() => {
     if (theme === "#023337") {
       document.body.style.backgroundColor = "#023337";
-      document.body.style.color = "white";
+      document.body.style.color = "#414141";
     } else {
-      document.body.style.backgroundColor = "white";
+      document.body.style.backgroundColor = "#414141";
       document.body.style.color = "#023337";
     }
 
@@ -37,7 +38,7 @@ export default function NavbarMenu() {
       case "Education":
         return (
           <>
-            <About />
+            {/* <About /> */}
             <Educaton />
           </>
         );
@@ -46,12 +47,18 @@ export default function NavbarMenu() {
       case "Projects":
         return <About />;
       case "Certificates":
+        return (
+          <>
+            <About />
+            <Certificates/>
+          </>
+        );
+      case "Gallery":
         return (<>
         <About />
-        {/* <Certificates/> */}
-        </>);
-      case "Gallery":
-        return <About />;
+        <Gallery />
+        </>
+        );
       default:
         return null;
     }
@@ -70,7 +77,7 @@ export default function NavbarMenu() {
           <li>
             <button
               onClick={() =>
-                setTheme(theme === "#023337" ? "white" : "#023337")
+                setTheme(theme === "#023337" ? "#414141" : "#023337")
               }
               className="theme-toggle-icon"
               title="Toggle theme"
