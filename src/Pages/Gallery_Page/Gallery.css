@@ -7,8 +7,8 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  width: 50vw;
-  height: 100vh;
+  width: 45vw;
+  height: 70vh;
   padding: 2rem;
   font-family: 'Georgia', serif;
   background-color: transparent;
@@ -27,8 +27,8 @@ body {
 
 .collage-area {
   position: relative;
-  width: 100%;
-  height: calc(100vh - 5rem); /* Adjust height based on title */
+  width: 120%;
+  height: calc(100vh - 2rem); /* Adjust height based on title */
   overflow-y: scroll;
   overflow-x: hidden;
 }
