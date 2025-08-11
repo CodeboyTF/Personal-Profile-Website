@@ -1,8 +1,8 @@
 export const certificates = [
   {
-    title: 'React Fundamentals Certificate',
-    file: './Certificates_docs/CertificateOfCompletion_React.pdf',
-    thumb: './Certificates_docs/thumbs/django.png',
+    title: 'Introduction to Django Certificate',
+    file: '/certificates/CertificateOfCompletion_Introduction to Django (2).pdf',
+    thumb: '../certificates/thumbs/django.png',
   },
   {
     title: 'Cybersecurity Awareness',

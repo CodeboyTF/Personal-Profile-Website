@@ -16,8 +16,9 @@ const Certificates = () => {
             className="certificate-card"
             onClick={() => setSelected(cert)}
           >
+            <img src={cert.thumb} alt={cert.title} className="cert-thumb"/>
             <div className="eye-icon">
-              <Eye size={32} />
+              <Eye size={20} />
             </div>
             <p className="cert-name">{cert.title}</p>
           </div>
@@ -31,7 +32,6 @@ const Certificates = () => {
               src={selected.file}
               title={selected.title}
               className="pdf-viewer"
-              sandbox=""
             />
             <p className="modal-title">{selected.title}</p>
             <button className="close-btn" onClick={() => setSelected(null)}>Close</button>
