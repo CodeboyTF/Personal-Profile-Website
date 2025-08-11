@@ -10,20 +10,43 @@
 .certificates-title {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #222;
+  color: #fff;
 }
 
+/* Vertical scrolling container */
 .certificates-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   width: 100%;
   flex: 1;
-  justify-items: center;
-  align-items: center;
-  overflow: hidden;
+  
+  overflow-y: auto;           /* enable vertical scroll */
+  overflow-x: hidden;         /* hide horizontal scroll */
+  scroll-behavior: smooth;    /* smooth scrolling */
+  -webkit-overflow-scrolling: touch; /* momentum scroll on iOS */
+  
+  padding-right: 1rem;        /* avoid scrollbar overlapping content */
+  
+  /* Optional scrollbar styles */
+  scrollbar-width: thin;      
+  scrollbar-color: rgba(0,0,0,0.2) transparent;
 }
 
+.certificates-grid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.certificates-grid::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.certificates-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Responsive grid columns */
 @media (max-width: 1200px) {
   .certificates-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -83,7 +106,7 @@
   top: 50%;
   left: 50%;
   font-size: 2rem;
-  color: white;
+  color: #023337;
   transform: translate(-50%, -50%);
   z-index: 2;
   pointer-events: none;
@@ -129,7 +152,7 @@
   margin-top: 1rem;
   padding: 10px 20px;
   font-size: 1rem;
-  background: #b20404;
+  background: #fff;
   color: #333;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -139,5 +162,5 @@
 }
 
 .close-btn:hover {
-  background: #eee;
+  background: #356267;
 }
