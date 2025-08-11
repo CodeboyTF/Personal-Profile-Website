@@ -5,7 +5,7 @@
   color: #356267;
   padding: 0.5rem 1rem;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +16,7 @@
   margin-bottom: 0.7rem;
   font-weight: 700;
   text-align: center;
+  color: #356267;
 }
 
 .projects-filter {
@@ -29,7 +30,7 @@
 .projects-filter button {
   padding: 0.2rem 0.6rem;
   border: 1px solid #356267;
-  background: transparent;
+  background: #fff;
   color: #356267;
   cursor: pointer;
   border-radius: 3px;
@@ -53,6 +54,7 @@
 }
 
 .project-card {
+  position: relative; /* needed for eye icon */
   border: 1px solid #356267;
   border-radius: 15px;
   overflow: hidden;
@@ -75,6 +77,15 @@
   object-fit: cover;
   border-bottom: 1px solid #356267;
   border-radius: 5px 5px 0 0;
+}
+
+.eye-icon-card {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #356267cc; /* teal with some transparency */
+  pointer-events: none;
+  user-select: none;
 }
 
 .project-info {
@@ -150,7 +161,7 @@
 .back-btn {
   align-self: flex-start;
   background: #356267;
-  border: #356267;
+  border: none;
   color: #fff;
   font-weight: 700;
   font-size: 0.75rem;
@@ -160,10 +171,12 @@
   margin-bottom: 0.8rem;
   cursor: pointer;
   transition: color 0.3s ease;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
 }
 
 .back-btn:hover {
-  color: #fff;
+  color: #d0e6e6;
 }
 
 .project-detail h1 {
