@@ -1,17 +1,17 @@
 export const certificates = [
   {
     title: "Python Essential 1 - Cisco",
-    file: "/public/certificates/PythonEssentials1Update.pdf",
+    file: "/certificates/PythonEssentials1Update.pdf",
     thumb: "/certificates/thumbs/python1.png",
   },
   {
     title: "Introduction to Django Certificate - LinkedIn",
     file: "/certificates/CertificateOfCompletion_Introduction to Django (2).pdf",
-    thumb: "../certificates/thumbs/django.png",
+    thumb: "/certificates/thumbs/django.png",
   },
   {
     title: "Python for Data Analysis - FreeCodeCamp",
-    file: "/certificates/CertificateOfCompletion_Python.pdf",
+    file: "/certificates/Data Analysis with Python.pdf",
     thumb: "/certificates/thumbs/freecodecamp.png",
   },
   {
@@ -31,7 +31,7 @@ export const certificates = [
   },
   {
     title: "JavaScript - SimpliLearn",
-    file: "/certificates/JavaScript.pdf",
+    file: "/certificates/Javascript.pdf",
     thumb: "/certificates/thumbs/Javascript.png",
   },
   {
