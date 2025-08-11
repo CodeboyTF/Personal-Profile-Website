@@ -5,8 +5,8 @@ import "../App.css";
 import About from "./About.jsx";
 import Profile from "../Pages/About_Page/Profile.jsx";
 import Educaton from "../Pages/Education_Page/Education.jsx";
-import Gallery from "../Pages/Gallery_Page/Gallery.jsx";
-import Gallery2 from "../Pages/Gallery_Page/Gallery2.jsx";
+import Gallery from "../Pages/Gallery/Gallery.jsx";
+import Gallery2 from "../Pages/Gallery/Gallery2.jsx";
 import Certificates from "../Pages/Certificates/Certificates.jsx";
 import Projects from "../Pages/Projects/Projects.jsx";
 
