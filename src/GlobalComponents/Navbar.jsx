@@ -8,6 +8,7 @@ import Educaton from "../Pages/Education_Page/Education.jsx";
 import Gallery from "../Pages/Gallery_Page/Gallery.jsx";
 import Gallery2 from "../Pages/Gallery_Page/Gallery2.jsx";
 import Certificates from "../Pages/Certificates/Certificates.jsx";
+import Projects from "../Pages/Projects/Projects.jsx";
 
 export default function NavbarMenu() {
   const [activePage, setActivePage] = useState("About");
@@ -46,7 +47,7 @@ export default function NavbarMenu() {
       case "Experience":
         return <About />;
       case "Projects":
-        return <About />;
+        return <Projects />;
       case "Certificates":
         return (
           <>
