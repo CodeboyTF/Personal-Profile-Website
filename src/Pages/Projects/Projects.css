@@ -1,0 +1,254 @@
+.projects-page {
+  width: 100vw;
+  min-height: 100vh;
+  background: transparent;
+  color: #356267;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.projects-filter {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.projects-filter button {
+  padding: 0.2rem 0.6rem;
+  border: 1px solid #356267;
+  background: transparent;
+  color: #356267;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 0.65rem;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.projects-filter button.active,
+.projects-filter button:hover {
+  background-color: #356267;
+  color: white;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.7rem;
+  width: 100%;
+  max-width: 720px;
+}
+
+.project-card {
+  border: 1px solid #356267;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  background: white;
+  transition: transform 0.15s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover,
+.project-card:focus {
+  transform: translateY(-3px);
+  outline: none;
+}
+
+.project-card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-bottom: 1px solid #356267;
+  border-radius: 5px 5px 0 0;
+}
+
+.project-info {
+  padding: 0.4rem 0.6rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-info h2 {
+  font-size: 0.85rem;
+  margin-bottom: 0.15rem;
+  font-weight: 700;
+}
+
+.project-info p {
+  color: #47585c;
+  font-size: 0.65rem;
+  flex-grow: 1;
+  margin-bottom: 0.15rem;
+}
+
+.date {
+  margin-top: 0.3rem;
+  font-size: 0.6rem;
+  color: #79959f;
+  font-weight: 600;
+}
+
+.project-links {
+  margin-top: 0.3rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-links a {
+  color: #356267;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.65rem;
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  border: 1px solid #356267;
+  padding: 0.15rem 0.3rem;
+  border-radius: 3px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.project-links a:hover {
+  background-color: #356267;
+  color: white;
+}
+
+/* DETAIL VIEW - COMPACT CARD */
+.project-detail {
+  width: 500px;
+  padding: 0.8rem 1rem;
+  box-sizing: border-box;
+  color: #356267;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #356267;
+  border-radius: 5px;
+  margin: 0.8rem auto;
+  box-shadow: none;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+}
+
+.back-btn {
+  align-self: flex-start;
+  background: #356267;
+  border: #356267;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #fff;
+}
+
+.project-detail h1 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}
+
+.project-detail img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 0.8rem;
+  box-shadow: none;
+}
+
+.full-description {
+  font-size: 0.7rem;
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+  color: #47585c;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.project-buttons a {
+  background-color: #356267;
+  color: white;
+  padding: 0.3rem 2rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  transition: background-color 0.25s ease;
+}
+
+.project-buttons a:hover {
+  background-color: #224c4c;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.8rem;
+}
+
+.tech-item {
+  background: #356267;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+  margin-bottom: 0.3rem;
+  color: #47585c;
+  font-weight: 600;
+}
+
+.star-icon {
+  color: gold;
+  font-size: 0.9rem;
+}
