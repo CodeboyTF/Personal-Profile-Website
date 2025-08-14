@@ -8,17 +8,7 @@
   /* background removed */
 }
 
-.certificates-title {
-  margin-bottom: 1rem;
-  color: #fff;
-  position: sticky;
-  top: 0;
-  /* background removed */
-  z-index: 10;
-  padding: 0.5rem 0;
-  width: 100%;
-  text-align: center;
-}
+
 
 /* Grid with slightly bigger fixed-size cards */
 .certificates-grid {
