@@ -3,7 +3,7 @@ import emailicon from "../animations_icons/email.json";
 import phoneicon from "../animations_icons/phone.json";
 import calendaricon from "../animations_icons/calendar.json";
 import locationIcon from "../animations_icons/location.json";
-import { FaGithub, FaInstagram, FaLinkedin, FaTelegramPlane} from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaYoutube} from "react-icons/fa";
 
 function About() {
   return (
@@ -92,12 +92,12 @@ function About() {
               <FaLinkedin />
             </a>
             <a
-              href="https://t.me/TFmakhara"
+              href="https://www.youtube.com/@CodeBoyTF"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-link"
             >
-              <FaTelegramPlane />
+              <FaYoutube />
             </a>
           </div>
 
