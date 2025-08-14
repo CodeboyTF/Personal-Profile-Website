@@ -4,9 +4,9 @@ import "../App.css";
 
 import About from "./About.jsx";
 import Profile from "../Pages/About/Profile.jsx";
-import Educaton from "../Pages/Education/education.jsx";
 import Gallery from "../Pages/Gallery/Gallery.jsx";
 import Gallery2 from "../Pages/Gallery/Gallery2.jsx";
+import Education from "../Pages/Education/Education.jsx";
 import Certificates from "../Pages/Certificates/Certificates.jsx";
 import Projects from "../Pages/Projects/Projects.jsx";
 
@@ -37,15 +37,15 @@ export default function NavbarMenu() {
             <Profile setActivePage={setActivePage} />
           </>
         );
-      case "Education":
+      case "Journey":
         return (
           <>
-            {/* <About /> */}
+            <About />
             <Educaton />
           </>
         );
-      case "Experience":
-        return <About />;
+      // case "Experience":
+      //   return <About />;
       case "Projects":
         return <Projects />;
       case "Certificates":
@@ -72,8 +72,8 @@ export default function NavbarMenu() {
       <nav className="navbar">
         <ul className="nav-links">
           <li onClick={() => setActivePage("About")}>About</li>
-          <li onClick={() => setActivePage("Education")}>Education</li>
-          <li onClick={() => setActivePage("Experience")}>Experience</li>
+          <li onClick={() => setActivePage("Journey")}>Edu & Exp</li>
+          {/* <li onClick={() => setActivePage("Experience")}>Experience</li> */}
           <li onClick={() => setActivePage("Projects")}>Projects</li>
           <li onClick={() => setActivePage("Certificates")}>Certificates</li>
           <li onClick={() => setActivePage("Gallery")}>Gallery</li>

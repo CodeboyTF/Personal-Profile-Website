@@ -1,47 +1,62 @@
 import React from "react";
 import "./Education.css";
 
-const educationData = [
+const EDUCATION = [
   {
-    title: "BSc IT",
-    institution: "University of XYZ",
-    year: "2020 - 2023",
-    description: "Software development, cybersecurity, and data science.",
+    school: "University of Example",
+    logo: "/Logos/UJlogo.png",
+    course: "Bachelor of Science",
+    major: "Computer Science",
+    duration: "2018 – 2021",
   },
   {
-    title: "Cybersecurity Internship",
-    institution: "CSIR",
-    year: "2023",
-    description: "Pentesting, digital forensics, ethical hacking.",
+    school: "Example Institute of Technology",
+    logo: "/Logos/Vutlogo.jpg",
+    course: "Diploma",
+    major: "Information Systems",
+    duration: "2016 – 2018",
   },
   {
-    title: "NLP + Deep Learning",
-    institution: "Online",
-    year: "2024",
-    description: "TensorFlow chatbot, Flask, Docker, deployment.",
+    school: "Sample High School",
+    logo: "/logos/sample-high.png",
+    course: "National Senior Certificate",
+    major: "Science Stream",
+    duration: "2011 – 2015",
   },
 ];
 
-export default function Education() {
+const Education = () => {
   return (
-    <section className="education-scroll-container">
-      <div className="timeline-wrapper">
-        <div className="timeline-line" />
-        <div className="timeline-items">
-          {educationData.map((item, index) => (
-            <div
-              key={index}
-              className={`timeline-card ${index % 2 === 0 ? "left" : "right"}`}
-            >
-              <h3>{item.title}</h3>
-              <p>
-                <strong>{item.institution}</strong> • {item.year}
-              </p>
-              <p>{item.description}</p>
-            </div>
-          ))}
-        </div>
+    <section className="edu-wrapper">
+      <div className="edu-spine">
+        <span className="edu-start"></span>
+      </div>
+
+      <div className="edu-list">
+        {EDUCATION.map((item, i) => {
+          const side = i % 2 === 0 ? "left" : "right";
+          return (
+            <article className={`edu-item ${side}`} key={i}>
+              <div className="edu-dot" />
+              <div className="edu-card">
+                <img
+                  className="edu-logo"
+                  src={item.logo}
+                  alt={`${item.school} logo`}
+                />
+                <div className="edu-text">
+                  <h3 className="edu-school">{item.school}</h3>
+                  <p className="edu-course">{item.course}</p>
+                  <p className="edu-major">{item.major}</p>
+                  <p className="edu-duration">{item.duration}</p>
+                </div>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );
-}
+};
+
+export default Education;
