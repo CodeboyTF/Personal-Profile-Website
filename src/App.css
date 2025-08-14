@@ -30,7 +30,7 @@ html {
   backdrop-filter: blur(12px);
   border: 1px solid #023337;
   border-radius: 25px;
-  /* box-shadow: 0 4px 12px #adacb5; */
+  box-shadow: 0 4px 12px #adacb5;
   padding: 6px 12px;
   width: fit-content;
   z-index: 1000;
@@ -262,13 +262,11 @@ html {
   color: #e9f8e7;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
-
-  width: 890px;       /* ✅ Fixed width */
-  height: 550px;      /* ✅ Fixed height */
-  overflow: hidden;   /* ✅ Clip overflow content */
-  position: relative; /* Optional, allows absolute children if needed */
+  width: 890px;       
+  height: 565px;      
+  overflow: hidden;   
+  position: relative; 
 }
-
 
 .card-header {
   background-color: #023337;
@@ -333,7 +331,7 @@ html {
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
-  margin-top: 16px;
+  margin-top: -20px;
 }
 
 .stats-bar-item {
@@ -445,7 +443,7 @@ html {
 }
 
 .what-i-do-container h5 {
-  color: white;
+  color: #e9f8e7;
   font-size: 1rem;
   margin-bottom: 16px;
   text-align: left;
@@ -459,7 +457,7 @@ html {
 
 .what-i-do-card {
   background-color: #1e3a3a;
-  color: white;
+  color: #e9f8e7;
   padding: 14px 16px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
