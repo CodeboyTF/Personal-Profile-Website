@@ -12,8 +12,10 @@ function Profile({ setActivePage }) {
           <h1>About Me</h1>
         </div>
         <div className="card-content">
-          I am Tebogo Makharamedzha, a software developer passionate about
-          building modern and efficient web applications...
+          I’m a software developer, data analyst, and cybersecurity enthusiast with a knack for building scalable,
+           efficient, and user-friendly solutions. I specialize in web development,
+            data analysis, and creating intelligent applications that make a real impact.
+             My goal is to develop software that not only works seamlessly but also solves real-world problems and enhances user experiences.
           <div className="button-stack">
             <div className="button-downloadcv">
               <DownloadCv />
