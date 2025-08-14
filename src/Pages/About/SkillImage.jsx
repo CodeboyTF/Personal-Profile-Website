@@ -2,6 +2,7 @@ function SkillImage() {
   return (
     <div className="tech-icons-bar">
       <div className="tech-icon"><img src="/icons/React-icon.svg" alt="React" /></div>
+      <div className="tech-icon"><img src="/icons/Express.svg" alt="ExpressJs" /></div>
       <div className="tech-icon"><img src="/icons/JavaScript-logo.png" alt="JavaScript" /></div>
       <div className="tech-icon"><img src="/icons/djangoproject-icon.svg" alt="Django" /></div>
       <div className="tech-icon"><img src="/icons/python-logo-only.svg" alt="Python" /></div>
