@@ -47,11 +47,16 @@ export default function NavbarMenu() {
       // case "Experience":
       //   return <About />;
       case "Projects":
-        return <Projects />;
+        return (
+          <>
+          <About/>
+          <Projects />
+          </>
+        );
       case "Certificates":
         return (
           <>
-            {/* <About /> */}
+            <About />
             <Certificates/>
           </>
         );
