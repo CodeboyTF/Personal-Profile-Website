@@ -1,32 +1,31 @@
-import { FaLaptopCode, FaChartLine, FaPuzzlePiece, FaCog } from "react-icons/fa";
+import { FaLaptopCode, FaChartLine, FaPuzzlePiece, FaShieldAlt } from "react-icons/fa";
 
 function WhatIDo() {
   const services = [
     {
       icon: <FaLaptopCode />,
       title: "Software Development",
-      desc: "I build, create, and maintain websites. Tailored to meet your business goals and attract your ideal audience.",
+      desc: "I design, build, and maintain web applications that are efficient, user-friendly, and tailored to solve real-world problems.",
     },
     {
       icon: <FaChartLine />,
       title: "Data Analysis",
-      desc: "I build, create, and maintain websites. Tailored to meet your business goals and attract your ideal audience.",
+      desc: "I transform raw data into actionable insights, helping businesses make informed decisions and uncover hidden opportunities.",
+    },
+    {
+    icon: <FaShieldAlt />,
+    title: "CyberSecurity",
+    desc: "I implement strategies and tools to protect systems, data, and users from digital threats, ensuring safety and reliability.",
     },
     {
       icon: <FaPuzzlePiece />,
       title: "Integrated Services",
-      desc: "I integrate third-party systems and APIs to ensure seamless communication between your tools, application and platforms.",
+      desc: "I connect third-party systems and APIs to ensure smooth, seamless communication between your applications, tools, and platforms.",
     },
-    {
-  icon: <FaCog />,
-  title: "Settings",
-  desc: "Configure your preferences and application options here.",
-}
   ];
 
   return (
     <div className="what-i-do-container">
-      <h5>What I Do</h5>
       <div className="what-i-do-cards">
         {services.map((item, index) => (
           <div key={index} className="what-i-do-card">
