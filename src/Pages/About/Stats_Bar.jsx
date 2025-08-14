@@ -12,7 +12,7 @@ function Stat_bar({ setActivePage }) {
       >
         <div className="stats-row">
           <FaProjectDiagram className="stats-icon" />
-          <p className="stat-number">12</p>
+          <p className="stat-number">6</p>
         </div>
         <h4 className="stat-title">Total Projects</h4>
         <h5 className="stat-label">Total Built Projects</h5>
@@ -25,7 +25,7 @@ function Stat_bar({ setActivePage }) {
       >
         <div className="stats-row">
           <GiDiploma className="stats-icon" />
-          <p className="stat-number">26</p>
+          <p className="stat-number">9</p>
         </div>
         <h4 className="stat-title">Certificates</h4>
         <h5 className="stat-label">Professional Skills Validated</h5>
