@@ -10,7 +10,7 @@ function About() {
     <div className="about-container">
       <div className="about-card">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_CnG3wTGxiWrxWDGWbzGH1y_4_Pyes_Uvw&s"
+          src="/images/pp.jpg"
           alt="Profile"
           className="profile-img"
         />
