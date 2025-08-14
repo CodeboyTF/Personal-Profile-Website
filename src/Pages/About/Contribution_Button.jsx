@@ -2,7 +2,7 @@ import { FaPaypal } from "react-icons/fa";
 
 function Contribution() {
   const ContributePay = () => {
-    window.open("https://www.paypal.com/paypalme/yourusername", "_blank");
+    window.open("https://www.paypal.com/paypalme/FhatuMT", "_blank");
   };
 
   return (
