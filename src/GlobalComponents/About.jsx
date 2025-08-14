@@ -101,7 +101,7 @@ function About() {
             </a>
           </div>
 
-          <p className="about-text">©Made by Gorrila Technology</p>
+          <p className="about-text">© Made by Makhara Tech</p>
         </div>
       </div>
     </div>
