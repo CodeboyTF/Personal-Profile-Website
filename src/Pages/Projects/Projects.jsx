@@ -13,7 +13,7 @@ import {
   FaDatabase,
   FaPhp,
 } from "react-icons/fa";
-import { SiDjango, SiFlask } from "react-icons/si";
+import { SiDjango, SiFlask, SiMongodb, SiTypescript, SiExpress, SiTailwindcss } from "react-icons/si";
 import { Eye } from "lucide-react";
 
 const techIcons = {
@@ -21,10 +21,14 @@ const techIcons = {
   Flask: <SiFlask />,
   Django: <SiDjango/>,
   React: <FaReact />,
+  Express: <SiExpress />,
   HTML: <FaHtml5 />,
   CSS: <FaCss3Alt />,
+  Tailwind: <SiTailwindcss />,
+  Typescript: <SiTypescript />,
   JavaScript: <FaJsSquare />,
   PHP: <FaPhp/>,
+  Mongodb: <SiMongodb />,
   PostgreSQL: <FaDatabase />,
   "Scikit-learn": <FaPython />,
   Pandas: <FaPython />,
@@ -68,20 +72,39 @@ const projectData = [
     ],
   },
 
+    {
+    id: 3,
+    title: "Medical Health System",
+    category: "Software Dev",
+    description:
+      "A full-featured healthcare management application built with TypeScript, TailwindCSS, Express.js, and MongoDB. The system includes an admin dashboard to manage doctors’ availability, track patient appointments, and monitor the number of patients helped or not helped. Patients can easily book appointments, while administrators gain real-time insights into healthcare operations, ensuring efficient scheduling and improved patient care.",
+    image: "/images/medic.png",
+    github: null,
+    live: null,
+    date: "September 2025",
+    technologies: ["Typescript", "React", "HTML", "Tailwind", "Mongodb", "Express"],
+    features: [
+      "Admin Dashboard",
+      "Patient Appointment Booking",
+      "Real-time Insights",
+      "Responsive UI"
+    ],
+  },
+
   // This is Data Analysis Category
 
 
    // This is Web Development Category
   {
     id: 4,
-    title: "2nd year-E-Commerce Website",
+    title: "3rd year-E-Commerce Website",
     category: "Web Dev",
     description:
-      "In my 2nd year at university, I built a fully functional e-commerce website using HTML, CSS, JavaScript, and PHP. The website allows users to browse products, add items to a shopping cart, and place orders online. It demonstrates core web development skills including frontend design, dynamic content, and backend integration.",
-    image: "/images/E-Commerce.png",
+      "In my 3rd year at university, I built a fully functional e-commerce website using HTML, CSS, JavaScript, and PHP. The website allows users to browse products, add items to a shopping cart, and place orders online. It demonstrates core web development skills including frontend design, dynamic content, and backend integration.",
+    image: "/images/E-Commerce (1).png",
     github: "https://github.com/CodeboyTF/Web-Uni-project",
     live: null,
-    date: "July 2022",
+    date: "July 2023",
     technologies: ["HTML", "CSS", "JavaScript", "PHP"],
     features: ["CRUD products to/off cart", "Responsive design", "Payment Feature" ],
   },
@@ -91,11 +114,11 @@ const projectData = [
     title: "Portfolio Website",
     category: "Web Dev",
     description:
-      "A personal portfolio website showcasing my projects, experience, and contact information.",
-    image: "/images/pro6.jpg",
-    github: "https://github.com/username/portfolio",
-    live: "https://myportfolio.com",
-    date: "Jan 2025",
+      "A responsive personal portfolio created with React, featuring projects, experience, and contact information.",
+    image: "/images/Portfolio.png",
+    github: "https://github.com/CodeboyTF/Personal-Profile-Website",
+    live: null,
+    date: "August 2025",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     features: ["Responsive design", "Animated sections", "Optimized SEO"],
   },
@@ -116,7 +139,7 @@ export default function Projects() {
         <>
           <h1 className="projects-title">My Projects</h1>
           <div className="projects-filter">
-            {["All", "Data Analysis", "Software Dev", "Web Dev"].map((cat) => (
+            {["All", "Software Dev", "Data Analysis", "Web Dev"].map((cat) => (
               <button
                 key={cat}
                 className={selectedCategory === cat ? "active" : ""}
