@@ -76,12 +76,12 @@ export default function NavbarMenu() {
     <div className="container">
       <nav className="navbar">
         <ul className="nav-links">
-          <li onClick={() => setActivePage("About")}>About</li>
-          <li onClick={() => setActivePage("Journey")}>Edu & Exp</li>
-          {/* <li onClick={() => setActivePage("Experience")}>Experience</li> */}
-          <li onClick={() => setActivePage("Projects")}>Projects</li>
-          <li onClick={() => setActivePage("Certificates")}>Certificates</li>
-          <li onClick={() => setActivePage("Gallery")}>Gallery</li>
+          <li onClick={() => setActivePage("About")} className={activePage === "About" ? "active" : ""}>About</li>
+          <li onClick={() => setActivePage("Journey")} className={activePage === "Journey" ? "active" : ""}>Edu & Exp</li>
+          {/* <li onClick={() => setActivePage("Experience")} className={activePage === "Experience" ? "active" : ""}>Experience</li> */}
+          <li onClick={() => setActivePage("Projects")} className={activePage === "Projects" ? "active" : ""}>Projects</li>
+          <li onClick={() => setActivePage("Certificates")} className={activePage === "Certificates" ? "active" : ""}>Certificates</li>
+          <li onClick={() => setActivePage("Gallery")} className={activePage === "Gallery" ? "active" : ""}>Gallery</li>
           <li>
             <button
               onClick={() =>
