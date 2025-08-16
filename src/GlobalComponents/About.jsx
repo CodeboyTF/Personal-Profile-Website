@@ -22,7 +22,7 @@ function About() {
           </h1>
           <h5 className="about-text">
             <span>Software Developer</span>
-            <p className="about-text">Data Analysis | Pentesting</p>
+            <p className="about-text">Data Analyst | Web Developer</p>
           </h5>
 
           {/* Email */}
@@ -42,7 +42,7 @@ function About() {
               loop={true}
               style={{ width: 30, height: 30 }}
             />
-            <a href="tel:+27 68 552 8943"><span>+27 68 552 8943</span></a>
+            <a href="tel:+27 68 552 8943"><span>+27 68 552 8***</span></a>
           </div>
 
           {/* Birthdate (Calendar) */}
@@ -52,7 +52,7 @@ function About() {
               loop={true}
               style={{ width: 30, height: 30 }}
             />
-            <span>19 September 2001</span>
+            <span>19 September</span>
           </div>
 
           {/* Location */}
