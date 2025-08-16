@@ -28,23 +28,44 @@ const techIcons = {
 };
 
 const projectData = [
-  {
+   {
     id: 1,
-    title: "AI Chatbot Assistant",
+    title: "Live Currency Calculator",
     category: "Software Dev",
     description:
-      "An NLP-powered chatbot using Flask and React, integrated with machine learning for intelligent responses.",
-    image: "/images/pro6.jpg",
-    github: "https://github.com/username/chatbot",
-    live: "https://chatbot-demo.com",
-    date: "March 2025",
-    technologies: ["Python", "Flask", "React", "PostgreSQL"],
+      "This project is a Currency Exchange Application built using Django and Html, Css. The goal is to provide both a web interface for users and a RESTful API or frontend apps to fetch live currency exchange rates.",
+    image: "/images/Currencycal.png",
+    github: "https://github.com/CodeboyTF/Currency-Application",
+    live: "https://codeboytf.pythonanywhere.com/",
+    date: "Semptember 2024",
+    technologies: ["Python", "Django", "HTML", "CSS"],
     features: [
-      "Natural Language Processing",
-      "Real-time communication",
-      "Secure authentication",
+      "Currency Calculation",
+      "Live Currency Rates",
     ],
   },
+  {
+    id: 2,
+    title: "Internal Chatbot Assistant",
+    category: "Software Dev",
+    description:
+      "An Internal Chatbot using Flask and Html,Css and Js, integrated with PostgreSQL and Nltk to try solve for response time for frequent questions.",
+    image: "/images/CHATBOT.png",
+    github: "https://github.com/CodeboyTF/Internal-Virtual-Assistant",
+    live: null,
+    date: "November 2024",
+    technologies: ["Python", "Flask", "HTML", "CSS", "JavaScript","PostgreSQL"],
+    features: [
+      "Natural Language Processing",
+      "Enquiries Csv - Training Data",
+      "Encryption",
+      "Socketio"
+    ],
+  },
+
+ 
+  
+
   {
     id: 2,
     title: "Obesity Data Clustering",
