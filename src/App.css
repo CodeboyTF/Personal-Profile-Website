@@ -49,10 +49,12 @@ html {
   padding: 6px 10px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.2s, color 0.2s;
+  /* transition: background-color 0.2s, color 0.2s; */
+  transition: all 0.0s ease-in-out;
 }
 
-.nav-links li:hover {
+.nav-links li:hover,
+.nav-links li.active {
   background-color: #e9f8e7;
   color: #023337;
   text-decoration: underline dotted;
