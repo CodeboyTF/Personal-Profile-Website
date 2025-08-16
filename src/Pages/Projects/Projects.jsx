@@ -74,16 +74,16 @@ const projectData = [
    // This is Web Development Category
   {
     id: 4,
-    title: "2nd year- E-Commerce Website",
+    title: "2nd year-E-Commerce Website",
     category: "Web Dev",
     description:
-      "A personal portfolio website showcasing my projects, experience, and contact information.",
-    image: "/images/pro6.jpg",
+      "In my 2nd year at university, I built a fully functional e-commerce website using HTML, CSS, JavaScript, and PHP. The website allows users to browse products, add items to a shopping cart, and place orders online. It demonstrates core web development skills including frontend design, dynamic content, and backend integration.",
+    image: "/images/E-Commerce.png",
     github: "https://github.com/CodeboyTF/Web-Uni-project",
     live: null,
-    date: "july 2022",
+    date: "July 2022",
     technologies: ["HTML", "CSS", "JavaScript", "PHP"],
-    features: ["Responsive design", "Animated sections", "Optimized SEO"],
+    features: ["CRUD products to/off cart", "Responsive design", "Payment Feature" ],
   },
 
     {
