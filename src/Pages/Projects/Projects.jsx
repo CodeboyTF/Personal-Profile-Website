@@ -11,23 +11,28 @@ import {
   FaCss3Alt,
   FaJsSquare,
   FaDatabase,
+  FaPhp,
 } from "react-icons/fa";
+import { SiDjango, SiFlask } from "react-icons/si";
 import { Eye } from "lucide-react";
 
 const techIcons = {
   Python: <FaPython />,
+  Flask: <SiFlask />,
+  Django: <SiDjango/>,
   React: <FaReact />,
   HTML: <FaHtml5 />,
   CSS: <FaCss3Alt />,
   JavaScript: <FaJsSquare />,
+  PHP: <FaPhp/>,
   PostgreSQL: <FaDatabase />,
-  Flask: <FaPython />,
   "Scikit-learn": <FaPython />,
   Pandas: <FaPython />,
   Matplotlib: <FaPython />,
 };
 
 const projectData = [
+  // This is Software Development Category
    {
     id: 1,
     title: "Live Currency Calculator",
@@ -63,28 +68,26 @@ const projectData = [
     ],
   },
 
- 
-  
+  // This is Data Analysis Category
 
+
+   // This is Web Development Category
   {
-    id: 2,
-    title: "Obesity Data Clustering",
-    category: "Data Science",
+    id: 4,
+    title: "2nd year- E-Commerce Website",
+    category: "Web Dev",
     description:
-      "Machine learning clustering model to identify patterns in obesity datasets for health insights.",
+      "A personal portfolio website showcasing my projects, experience, and contact information.",
     image: "/images/pro6.jpg",
-    github: "https://github.com/username/obesity-clustering",
-    live: "https://data-cluster-demo.com",
-    date: "Feb 2025",
-    technologies: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
-    features: [
-      "K-Means clustering",
-      "Data visualization dashboard",
-      "CSV data ingestion",
-    ],
+    github: "https://github.com/CodeboyTF/Web-Uni-project",
+    live: null,
+    date: "july 2022",
+    technologies: ["HTML", "CSS", "JavaScript", "PHP"],
+    features: ["Responsive design", "Animated sections", "Optimized SEO"],
   },
-  {
-    id: 3,
+
+    {
+    id: 5,
     title: "Portfolio Website",
     category: "Web Dev",
     description:
@@ -113,7 +116,7 @@ export default function Projects() {
         <>
           <h1 className="projects-title">My Projects</h1>
           <div className="projects-filter">
-            {["All", "Data Science", "Software Dev", "Web Dev"].map((cat) => (
+            {["All", "Data Analysis", "Software Dev", "Web Dev"].map((cat) => (
               <button
                 key={cat}
                 className={selectedCategory === cat ? "active" : ""}
