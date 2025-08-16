@@ -42,7 +42,7 @@ function About() {
               loop={true}
               style={{ width: 30, height: 30 }}
             />
-            <a href="tel:+27 68 552 8943"><span>+27 68 552 8***</span></a>
+            <a href="tel:+27 68 552 8943"><span>+27 68 - 552 - 8***</span></a>
           </div>
 
           {/* Birthdate (Calendar) */}
