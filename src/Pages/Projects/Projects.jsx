@@ -12,14 +12,22 @@ import {
   FaJsSquare,
   FaDatabase,
   FaPhp,
+  FaKaggle,
 } from "react-icons/fa";
-import { SiDjango, SiFlask, SiMongodb, SiTypescript, SiExpress, SiTailwindcss } from "react-icons/si";
+import {
+  SiDjango,
+  SiFlask,
+  SiMongodb,
+  SiTypescript,
+  SiExpress,
+  SiTailwindcss,
+} from "react-icons/si";
 import { Eye } from "lucide-react";
 
 const techIcons = {
   Python: <FaPython />,
   Flask: <SiFlask />,
-  Django: <SiDjango/>,
+  Django: <SiDjango />,
   React: <FaReact />,
   Express: <SiExpress />,
   HTML: <FaHtml5 />,
@@ -27,7 +35,7 @@ const techIcons = {
   Tailwind: <SiTailwindcss />,
   Typescript: <SiTypescript />,
   JavaScript: <FaJsSquare />,
-  PHP: <FaPhp/>,
+  PHP: <FaPhp />,
   Mongodb: <SiMongodb />,
   PostgreSQL: <FaDatabase />,
   "Scikit-learn": <FaPython />,
@@ -37,7 +45,7 @@ const techIcons = {
 
 const projectData = [
   // This is Software Development Category
-   {
+  {
     id: 1,
     title: "Live Currency Calculator",
     category: "Software Dev",
@@ -48,10 +56,7 @@ const projectData = [
     live: "https://codeboytf.pythonanywhere.com/",
     date: "Semptember 2024",
     technologies: ["Python", "Django", "HTML", "CSS"],
-    features: [
-      "Currency Calculation",
-      "Live Currency Rates",
-    ],
+    features: ["Currency Calculation", "Live Currency Rates"],
   },
   {
     id: 2,
@@ -63,16 +68,23 @@ const projectData = [
     github: "https://github.com/CodeboyTF/Internal-Virtual-Assistant",
     live: null,
     date: "November 2024",
-    technologies: ["Python", "Flask", "HTML", "CSS", "JavaScript","PostgreSQL"],
+    technologies: [
+      "Python",
+      "Flask",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PostgreSQL",
+    ],
     features: [
       "Natural Language Processing",
       "Enquiries Csv - Training Data",
       "Encryption",
-      "Socketio"
+      "Socketio",
     ],
   },
 
-    {
+  {
     id: 3,
     title: "Medical Health System",
     category: "Software Dev",
@@ -82,21 +94,45 @@ const projectData = [
     github: null,
     live: null,
     date: "September 2025",
-    technologies: ["Typescript", "React", "HTML", "Tailwind", "Mongodb", "Express"],
+    technologies: [
+      "Typescript",
+      "React",
+      "HTML",
+      "Tailwind",
+      "Mongodb",
+      "Express",
+    ],
     features: [
       "Admin Dashboard",
       "Patient Appointment Booking",
       "Real-time Insights",
-      "Responsive UI"
+      "Responsive UI",
     ],
   },
 
   // This is Data Analysis Category
-
-
-   // This is Web Development Category
   {
     id: 4,
+    title: "3rd year-E-Commerce Website",
+    category: "Data Analysis",
+    description:
+      "In my 3rd year at university, I built a fully functional e-commerce website using HTML, CSS, JavaScript, and PHP. The website allows users to browse products, add items to a shopping cart, and place orders online. It demonstrates core web development skills including frontend design, dynamic content, and backend integration.",
+    image: "/images/E-Commerce (1).png",
+    Kaggle: "https://github.com/CodeboyTF/Web-Uni-project",
+    github: null,
+    live: null,
+    date: "July 2023",
+    technologies: ["HTML", "CSS", "JavaScript", "PHP"],
+    features: [
+      "CRUD products to/off cart",
+      "Responsive design",
+      "Payment Feature",
+    ],
+  },
+
+  // This is Web Development Category
+  {
+    id: 5,
     title: "3rd year-E-Commerce Website",
     category: "Web Dev",
     description:
@@ -106,11 +142,15 @@ const projectData = [
     live: null,
     date: "July 2023",
     technologies: ["HTML", "CSS", "JavaScript", "PHP"],
-    features: ["CRUD products to/off cart", "Responsive design", "Payment Feature" ],
+    features: [
+      "CRUD products to/off cart",
+      "Responsive design",
+      "Payment Feature",
+    ],
   },
 
-    {
-    id: 5,
+  {
+    id: 6,
     title: "Portfolio Website",
     category: "Web Dev",
     description:
@@ -186,6 +226,17 @@ export default function Projects() {
                     >
                       <FaExternalLinkAlt /> Live
                     </a>
+
+                    {project.category === "Data Analysis" && project.Kaggle && (
+                      <a
+                        href={project.Kaggle}
+                        onClick={(e) => e.stopPropagation()}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FaKaggle /> Kaggle
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -210,6 +261,17 @@ export default function Projects() {
             <a href={selectedProject.live} target="_blank" rel="noreferrer">
               <FaExternalLinkAlt /> Live Demo
             </a>
+
+            {selectedProject.category === "Data Analysis" &&
+              selectedProject.Kaggle && (
+                <a
+                  href={selectedProject.Kaggle}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaKaggle /> Kaggle
+                </a>
+              )}
           </div>
 
           <h3>Technologies Used</h3>
