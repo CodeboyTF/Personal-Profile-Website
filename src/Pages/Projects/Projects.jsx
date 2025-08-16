@@ -13,6 +13,8 @@ import {
   FaDatabase,
   FaPhp,
   FaKaggle,
+  FaChartBar,
+  FaChartPie,
 } from "react-icons/fa";
 import {
   SiDjango,
@@ -21,11 +23,17 @@ import {
   SiTypescript,
   SiExpress,
   SiTailwindcss,
+  SiPandas,
+  SiNumpy,
 } from "react-icons/si";
 import { Eye } from "lucide-react";
 
 const techIcons = {
   Python: <FaPython />,
+  Pandas: <SiPandas />,
+  Numpy: <SiNumpy />,
+  Matplotlib: <FaChartBar />,
+  Seaborn: <FaChartPie />,
   Flask: <SiFlask />,
   Django: <SiDjango />,
   React: <FaReact />,
@@ -39,8 +47,7 @@ const techIcons = {
   Mongodb: <SiMongodb />,
   PostgreSQL: <FaDatabase />,
   "Scikit-learn": <FaPython />,
-  Pandas: <FaPython />,
-  Matplotlib: <FaPython />,
+
 };
 
 const projectData = [
@@ -66,7 +73,7 @@ const projectData = [
       "An Internal Chatbot using Flask and Html,Css and Js, integrated with PostgreSQL and Nltk to try solve for response time for frequent questions.",
     image: "/images/CHATBOT.png",
     github: "https://github.com/CodeboyTF/Internal-Virtual-Assistant",
-    live: null,
+    live: "#",
     date: "November 2024",
     technologies: [
       "Python",
@@ -91,8 +98,8 @@ const projectData = [
     description:
       "A full-featured healthcare management application built with TypeScript, TailwindCSS, Express.js, and MongoDB. The system includes an admin dashboard to manage doctors’ availability, track patient appointments, and monitor the number of patients helped or not helped. Patients can easily book appointments, while administrators gain real-time insights into healthcare operations, ensuring efficient scheduling and improved patient care.",
     image: "/images/medic.png",
-    github: null,
-    live: null,
+    github: "#",
+    live: "#",
     date: "September 2025",
     technologies: [
       "Typescript",
@@ -113,16 +120,16 @@ const projectData = [
   // This is Data Analysis Category
   {
     id: 4,
-    title: "3rd year-E-Commerce Website",
+    title: "Violence against Women_Turkey.csv",
     category: "Data Analysis",
     description:
       "In my 3rd year at university, I built a fully functional e-commerce website using HTML, CSS, JavaScript, and PHP. The website allows users to browse products, add items to a shopping cart, and place orders online. It demonstrates core web development skills including frontend design, dynamic content, and backend integration.",
-    image: "/images/E-Commerce (1).png",
-    Kaggle: "https://github.com/CodeboyTF/Web-Uni-project",
+    image: "/images/turkey_csv.png",
+    Kaggle: "https://www.kaggle.com/code/codeboytf/violence-against-women-turkey-csv",
     github: null,
     live: null,
-    date: "July 2023",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP"],
+    date: "May 2024",
+    technologies: ["Python", "Pandas", "Numpy", "Matplotlib", "Seaborn"],
     features: [
       "CRUD products to/off cart",
       "Responsive design",
@@ -139,7 +146,7 @@ const projectData = [
       "In my 3rd year at university, I built a fully functional e-commerce website using HTML, CSS, JavaScript, and PHP. The website allows users to browse products, add items to a shopping cart, and place orders online. It demonstrates core web development skills including frontend design, dynamic content, and backend integration.",
     image: "/images/E-Commerce (1).png",
     github: "https://github.com/CodeboyTF/Web-Uni-project",
-    live: null,
+    live: "#",
     date: "July 2023",
     technologies: ["HTML", "CSS", "JavaScript", "PHP"],
     features: [
@@ -157,7 +164,7 @@ const projectData = [
       "A responsive personal portfolio created with React, featuring projects, experience, and contact information.",
     image: "/images/Portfolio.png",
     github: "https://github.com/CodeboyTF/Personal-Profile-Website",
-    live: null,
+    live: "#",
     date: "August 2025",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     features: ["Responsive design", "Animated sections", "Optimized SEO"],
@@ -210,6 +217,7 @@ export default function Projects() {
                   <p>{project.description.slice(0, 80)}...</p>
                   <span className="date">{project.date}</span>
                   <div className="project-links">
+                    {(project.category === "Software Dev" || project.category === "Web Dev") && project.github && (
                     <a
                       href={project.github}
                       onClick={(e) => e.stopPropagation()}
@@ -217,7 +225,9 @@ export default function Projects() {
                       rel="noreferrer"
                     >
                       <FaGithub /> GitHub
-                    </a>
+                    </a>)}
+
+                    {(project.category === "Software Dev" || project.category === "Web Dev" )&& project.live && (
                     <a
                       href={project.live}
                       onClick={(e) => e.stopPropagation()}
@@ -225,7 +235,7 @@ export default function Projects() {
                       rel="noreferrer"
                     >
                       <FaExternalLinkAlt /> Live
-                    </a>
+                    </a>)}
 
                     {project.category === "Data Analysis" && project.Kaggle && (
                       <a
@@ -255,12 +265,15 @@ export default function Projects() {
           <p className="full-description">{selectedProject.description}</p>
 
           <div className="project-buttons">
+            {(selectedProject.category === "Software Dev" || selectedProject.category === "Web Dev") && selectedProject.github && (
             <a href={selectedProject.github} target="_blank" rel="noreferrer">
               <FaGithub /> View GitHub
-            </a>
+            </a>)}
+
+            {(selectedProject.category === "Software Dev" || selectedProject.category === "Web Dev") && selectedProject.live && (
             <a href={selectedProject.live} target="_blank" rel="noreferrer">
               <FaExternalLinkAlt /> Live Demo
-            </a>
+            </a>)}
 
             {selectedProject.category === "Data Analysis" &&
               selectedProject.Kaggle && (
