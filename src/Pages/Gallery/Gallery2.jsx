@@ -4,12 +4,12 @@ import './Gallery2.css';
 
 function Gallery2() {
   const photos = [
-    { src: '/images/pro6.jpg', caption: 'Team Collaboration', rotation: '6deg', top: '30%', left: '70%' },
-    { src: '/images/pro4.jpg', caption: 'Networking Event', rotation: '4deg', top: '20%', left: '35%' },
-    { src: '/images/pro1.jpg', caption: 'Conference Panel', rotation: '-8deg', top: '60%', left: '15%' },
-    { src: '/images/pro5.jpg', caption: 'Award Moment', rotation: '-3deg', top: '45%', left: '60%' },
-    { src: '/images/grad1.jpg', caption: 'Graduation April 2024', rotation: '-5deg', top: '5%', left: '10%' },
-    { src: '/images/pro2.jpg', caption: 'Workshop Host', rotation: '5deg', top: '75%', left: '50%' },
+    { src: '/images/white.jpg', caption: '-', rotation: '6deg', top: '30%', left: '70%' },
+    { src: '/images/firstday.jpg', caption: "CSIR-First Day-Internship Sep '24", rotation: '4deg', top: '20%', left: '35%' },
+    { src: '/images/Networking.jpg', caption: "SISAL-Networking Event Nov '24", rotation: '-8deg', top: '60%', left: '15%' },
+    { src: '/images/white.jpg', caption: '-', rotation: '-3deg', top: '45%', left: '60%' },
+    { src: '/images/grad1.jpg', caption: 'VUT-Graduation April 2024', rotation: '-5deg', top: '5%', left: '10%' },
+    { src: '/images/white.jpg', caption: '-', rotation: '5deg', top: '75%', left: '50%' },
   ];
 
   return (
