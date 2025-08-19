@@ -11,7 +11,7 @@ export default function UrlIcon() {
       document.createElement("link");
     link.rel = "icon";
     link.type = "image/png";
-    link.href = "/TFlogoicon.png"; // must be in public/
+    link.href = "TFlogoicon.png"; // must be in public/
     link.sizes = "1000x1000"; // or "512x512" if you have that
 
     document.head.appendChild(link);
