@@ -17,12 +17,12 @@ export default function NavbarMenu() {
   });
 
   useEffect(() => {
-    if (theme === "#023337") {
-      document.body.style.backgroundColor = "#023337";
-      document.body.style.color = "#414141";
+    if (theme === "black") {
+      document.body.style.backgroundColor = "black";
+      document.body.style.color = "#e9f8e7";
     } else {
-      document.body.style.backgroundColor = "#414141";
-      document.body.style.color = "#023337";
+      document.body.style.backgroundColor = "#e9f8e7";
+      document.body.style.color = "black";
     }
 
     localStorage.setItem("theme", theme);
@@ -85,12 +85,12 @@ export default function NavbarMenu() {
           <li>
             <button
               onClick={() =>
-                setTheme(theme === "#023337" ? "#414141" : "#023337")
+                setTheme(theme === "black" ? "#e9f8e7" : "black")
               }
               className="theme-toggle-icon"
               title="Toggle theme"
             >
-              {theme === "#023337" ? <Moon size={20} /> : <Sun size={20} />}
+              {theme === "black" ? <Moon size={20} /> : <Sun size={20} />}
             </button>
           </li>
         </ul>
