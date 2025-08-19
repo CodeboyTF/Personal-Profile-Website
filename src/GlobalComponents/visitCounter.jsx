@@ -1,9 +1,8 @@
 
 import React, { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
-import "../App.css"; // make sure you have this
+import "../App.css";
 
-// Replace with your Supabase details
 const supabaseUrl = "https://soskcypcplxezkdzujvz.supabase.co";
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNvc2tjeXBjcGx4ZXprZHp1anZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU2MTcxNzEsImV4cCI6MjA3MTE5MzE3MX0.eG6McwEanLIGr6mDolrMhCzqoZvl_NldMGZ18VmVmP0";
 const supabase = createClient(supabaseUrl, supabaseKey);
@@ -14,7 +13,7 @@ const VisitCounter = () => {
   useEffect(() => {
     async function updateCounter() {
       try {
-        // Step 1: Fetch current count
+       
         const { data, error } = await supabase
           .from("visits")
           .select("count")
@@ -25,7 +24,7 @@ const VisitCounter = () => {
 
         const newCount = data.count + 1;
 
-        // Step 2: Update with new count
+        
         const { data: updatedData, error: updateError } = await supabase
           .from("visits")
           .update({ count: newCount })
@@ -35,7 +34,7 @@ const VisitCounter = () => {
 
         if (updateError) throw updateError;
 
-        // Step 3: Update state to display
+        
         setVisits(updatedData.count);
       } catch (err) {
         console.error("Error updating counter:", err.message);
