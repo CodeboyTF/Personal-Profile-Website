@@ -1,20 +1,51 @@
+
 import React, { useEffect, useState } from "react";
-import "../App.css";
+import { createClient } from "@supabase/supabase-js";
+import "../App.css"; // make sure you have this
+
+// Replace with your Supabase details
+const supabaseUrl = "https://soskcypcplxezkdzujvz.supabase.co";
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNvc2tjeXBjcGx4ZXprZHp1anZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU2MTcxNzEsImV4cCI6MjA3MTE5MzE3MX0.eG6McwEanLIGr6mDolrMhCzqoZvl_NldMGZ18VmVmP0";
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 const VisitCounter = () => {
   const [visits, setVisits] = useState(0);
 
   useEffect(() => {
-    fetch("https://api.countapi.xyz/hit/fhatuwanitsoftwaredev.netflify.app/visits")
-      .then((res) => res.json())
-      .then((data) => setVisits(data.value));
+    async function updateCounter() {
+      try {
+        // Step 1: Fetch current count
+        const { data, error } = await supabase
+          .from("visits")
+          .select("count")
+          .eq("id", 1)
+          .single();
+
+        if (error) throw error;
+
+        const newCount = data.count + 1;
+
+        // Step 2: Update with new count
+        const { data: updatedData, error: updateError } = await supabase
+          .from("visits")
+          .update({ count: newCount })
+          .eq("id", 1)
+          .select()
+          .single();
+
+        if (updateError) throw updateError;
+
+        // Step 3: Update state to display
+        setVisits(updatedData.count);
+      } catch (err) {
+        console.error("Error updating counter:", err.message);
+      }
+    }
+
+    updateCounter();
   }, []);
 
-  return (
-    <div className="visit-counter">
-      👀 {visits} visits
-    </div>
-  );
+  return <div className="visit-counter">👀 {visits} visits</div>;
 };
 
 export default VisitCounter;

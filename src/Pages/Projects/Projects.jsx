@@ -164,7 +164,7 @@ const projectData = [
       "A responsive personal portfolio created with React, featuring projects, experience, and contact information.",
     image: "/images/Portfolio.png",
     github: "https://github.com/CodeboyTF/Personal-Profile-Website",
-    live: "#",
+    live: "https://fhatuwanitsoftwaredev.netlify.app/",
     date: "August 2025",
     technologies: ["HTML", "CSS", "JavaScript", "React"],
     features: ["Responsive design", "Animated sections", "Optimized SEO"],
