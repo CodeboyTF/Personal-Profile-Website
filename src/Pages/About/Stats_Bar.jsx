@@ -8,7 +8,7 @@ function Stat_bar({ setActivePage }) {
     <div className="stats-container-card">
       <div
         className="stats-bar-item"
-        onClick={() => setActivePage("Education")}
+        onClick={() => setActivePage("Journey")}
       >
         <div className="stats-row">
           <FaProjectDiagram className="stats-icon" />
@@ -34,7 +34,7 @@ function Stat_bar({ setActivePage }) {
 
       <div
         className="stats-bar-item"
-        onClick={() => setActivePage("Experience")}
+        onClick={() => setActivePage("Journey")}
       >
         <div className="stats-row">
           <MdWork className="stats-icon" />
