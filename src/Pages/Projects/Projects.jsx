@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Projects.css";
+import "../../App.css";
 import {
   FaGithub,
   FaExternalLinkAlt,
@@ -47,7 +47,6 @@ const techIcons = {
   Mongodb: <SiMongodb />,
   PostgreSQL: <FaDatabase />,
   "Scikit-learn": <FaPython />,
-
 };
 
 const projectData = [
@@ -125,7 +124,8 @@ const projectData = [
     description:
       "In my 3rd year at university, I built a fully functional e-commerce website using HTML, CSS, JavaScript, and PHP. The website allows users to browse products, add items to a shopping cart, and place orders online. It demonstrates core web development skills including frontend design, dynamic content, and backend integration.",
     image: "/images/turkey_csv.png",
-    Kaggle: "https://www.kaggle.com/code/codeboytf/violence-against-women-turkey-csv",
+    Kaggle:
+      "https://www.kaggle.com/code/codeboytf/violence-against-women-turkey-csv",
     github: null,
     live: null,
     date: "May 2024",
@@ -217,25 +217,31 @@ export default function Projects() {
                   <p>{project.description.slice(0, 80)}...</p>
                   <span className="date">{project.date}</span>
                   <div className="project-links">
-                    {(project.category === "Software Dev" || project.category === "Web Dev") && project.github && (
-                    <a
-                      href={project.github}
-                      onClick={(e) => e.stopPropagation()}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaGithub /> GitHub
-                    </a>)}
+                    {(project.category === "Software Dev" ||
+                      project.category === "Web Dev") &&
+                      project.github && (
+                        <a
+                          href={project.github}
+                          onClick={(e) => e.stopPropagation()}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <FaGithub /> GitHub
+                        </a>
+                      )}
 
-                    {(project.category === "Software Dev" || project.category === "Web Dev" )&& project.live && (
-                    <a
-                      href={project.live}
-                      onClick={(e) => e.stopPropagation()}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaExternalLinkAlt /> Live
-                    </a>)}
+                    {(project.category === "Software Dev" ||
+                      project.category === "Web Dev") &&
+                      project.live && (
+                        <a
+                          href={project.live}
+                          onClick={(e) => e.stopPropagation()}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <FaExternalLinkAlt /> Live
+                        </a>
+                      )}
 
                     {project.category === "Data Analysis" && project.Kaggle && (
                       <a
@@ -265,15 +271,25 @@ export default function Projects() {
           <p className="full-description">{selectedProject.description}</p>
 
           <div className="project-buttons">
-            {(selectedProject.category === "Software Dev" || selectedProject.category === "Web Dev") && selectedProject.github && (
-            <a href={selectedProject.github} target="_blank" rel="noreferrer">
-              <FaGithub /> View GitHub
-            </a>)}
+            {(selectedProject.category === "Software Dev" ||
+              selectedProject.category === "Web Dev") &&
+              selectedProject.github && (
+                <a
+                  href={selectedProject.github}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub /> View GitHub
+                </a>
+              )}
 
-            {(selectedProject.category === "Software Dev" || selectedProject.category === "Web Dev") && selectedProject.live && (
-            <a href={selectedProject.live} target="_blank" rel="noreferrer">
-              <FaExternalLinkAlt /> Live Demo
-            </a>)}
+            {(selectedProject.category === "Software Dev" ||
+              selectedProject.category === "Web Dev") &&
+              selectedProject.live && (
+                <a href={selectedProject.live} target="_blank" rel="noreferrer">
+                  <FaExternalLinkAlt /> Live Demo
+                </a>
+              )}
 
             {selectedProject.category === "Data Analysis" &&
               selectedProject.Kaggle && (

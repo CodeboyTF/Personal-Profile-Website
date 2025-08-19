@@ -1,5 +1,5 @@
 import React from 'react';
-import './Gallery.css';
+import "../../App.css";
 
 function Gallery() {
   const photos = [

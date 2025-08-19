@@ -1,5 +1,5 @@
 import React from "react";
-import "./Education.css";
+import "../../App.css";
 const EDUCATION = [
   {
     school: "Lamula Jubilee Secondary School",
