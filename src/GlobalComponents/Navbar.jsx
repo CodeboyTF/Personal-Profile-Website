@@ -6,7 +6,7 @@ import About from "./About.jsx";
 import Profile from "../Pages/About/Profile.jsx";
 import Gallery from "../Pages/Gallery/Gallery.jsx";
 import Gallery2 from "../Pages/Gallery/Gallery2.jsx";
-import Certificates from "../Pages/Tcertificates/Certificates.jsx";
+import Certificates from "../Pages/Certificates/Certificates.jsx";
 import Projects from "../Pages/Projects/Projects.jsx";
 import Education from "../Pages/Education/education.jsx";
 
