@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Certificates.css';
+import { certificates } from "./certData.js";
+
 import { Eye } from 'lucide-react';
 
 const Certificates = () => {
