@@ -73,7 +73,7 @@ const projectData = [
       "An Internal Chatbot using Flask and Html,Css and Js, integrated with PostgreSQL and Nltk to try solve for response time for frequent questions.",
     image: "/images/CHATBOT.png",
     github: "https://github.com/CodeboyTF/Internal-Virtual-Assistant",
-    live: "#",
+    live: null,
     date: "November 2024",
     technologies: [
       "Python",
@@ -99,7 +99,7 @@ const projectData = [
       "A full-featured healthcare management application built with TypeScript, TailwindCSS, Express.js, and MongoDB. The system includes an admin dashboard to manage doctors’ availability, track patient appointments, and monitor the number of patients helped or not helped. Patients can easily book appointments, while administrators gain real-time insights into healthcare operations, ensuring efficient scheduling and improved patient care.",
     image: "/images/medic.png",
     github: "#",
-    live: "#",
+    live: null,
     date: "September 2025",
     technologies: [
       "Typescript",
@@ -146,7 +146,7 @@ const projectData = [
       "In my 3rd year at university, I built a fully functional e-commerce website using HTML, CSS, JavaScript, and PHP. The website allows users to browse products, add items to a shopping cart, and place orders online. It demonstrates core web development skills including frontend design, dynamic content, and backend integration.",
     image: "/images/E-Commerce (1).png",
     github: "https://github.com/CodeboyTF/Web-Uni-project",
-    live: "#",
+    live: null,
     date: "July 2023",
     technologies: ["HTML", "CSS", "JavaScript", "PHP"],
     features: [
