@@ -9,7 +9,7 @@ body,
 html {
   height: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
+  background-color: black;
   margin: 0;
   overflow: hidden; /* disables scrollbars */
 
@@ -26,11 +26,11 @@ html {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  background: #023337;
+  background: black;
   backdrop-filter: blur(12px);
-  border: 1px solid #023337;
+  border: 1px solid white;
   border-radius: 25px;
-  box-shadow: 0 4px 12px #adacb5;
+  box-shadow: 0 4px 12px whitesmoke;
   padding: 6px 12px;
   width: fit-content;
   z-index: 1000;
@@ -41,7 +41,7 @@ html {
   gap: 16px;
   list-style: none;
   align-items: center;
-  color: #fff;
+  color: #e9f8e7;
 }
 
 .nav-links li {
@@ -56,7 +56,7 @@ html {
 .nav-links li:hover,
 .nav-links li.active {
   background-color: #e9f8e7;
-  color: #023337;
+  color: black;
   text-decoration: underline dotted;
 }
 
@@ -65,15 +65,15 @@ html {
   padding: 6px 12px;
   border: none;
   border-radius: 6px;
-  background-color: #e9f8e7;
-  color: #023337;
+  background-color:#e9f8e7;
+  color: black;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 .nav-links button:hover {
-  background-color: #356267;
-  color: #adacb5;
+  background-color: black;
+  color: #e9f8e7;
 }
 
 .content {
@@ -127,7 +127,7 @@ html {
   left: 50px;
   width: 290px;
   height: calc(100vh - 160px);
-  background: #023337;
+  background: black;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 20px 16px;
@@ -258,7 +258,7 @@ html {
   flex-grow: 0;
   margin-top: 22px;
   margin-left: 330px;
-  background-color: #356267;
+  background-color: black;
   border-radius: 12px;
   padding: 20px 24px;
   color: #e9f8e7;
@@ -296,8 +296,8 @@ html {
 /* Shared styles */
 .button-downloadcv button,
 .button-contribution button {
-  background-color: #990302;
-  color: white;
+  background-color: #e9f8e7;
+  color: black;
   border: 2px solid transparent;
   border-radius: 30px;
   padding: 14px 32px;
@@ -355,7 +355,7 @@ html {
 }
 
 .stats-bar-item:hover {
-  background-color: #356267;
+  background-color: black;
   transform: translateY(-1px);
 }
 
@@ -458,7 +458,7 @@ html {
 }
 
 .what-i-do-card {
-  background-color: #1e3a3a;
+  background-color: black;
   color: #e9f8e7;
   padding: 14px 16px;
   border-radius: 10px;
